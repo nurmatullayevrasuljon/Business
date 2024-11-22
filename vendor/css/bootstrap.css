@@ -577,8 +577,8 @@ pre code {
 .container-lg,
 .container-xl {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -7454,7 +7454,7 @@ a.close.disabled {
     text-align: center;
     background: none;
     border: 0;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     transition: opacity 0.15s ease;
 }
 
@@ -10710,6 +10710,10 @@ col-sm {
     .ml-xl-5,
     .mx-xl-5 {
         margin-left: 3rem !important;
+    }
+    .mrm-xl-5,
+    .mx-xl-5 {
+        margin-left: -1rem !important;
     }
     .p-xl-0 {
         padding: 0 !important;

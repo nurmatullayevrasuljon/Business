@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="vendor/WOW-master/css/libs/animate.css">
+    <link rel="stylesheet" href="vendor/WOW-master/css/site.css">
+    <link rel="stylesheet" href="vendor/css/shared.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        .wow:first-child {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------------------- Header ------------------------------>
+    <header class="herosection-3">
+        <!-- Navbar -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()>
+                    <a href="#"><img src="img/close_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </li>
+                <li class="parrent">
+                    <a href="index.html">Home</a>
+                    <span class="line"></span>
+                </li>
+                <li class="parrent">
+                    <a href="about.html">About Us</a>
+                    <span class="line"></span>
+                </li>
+                <li class="parrent">
+                    <a href="services.html">Services</a>
+                    <span class="line"></span>
+                </li>
+                <li class="parrent">
+                    <a href="contact.html">Contact Us</a>
+                    <span class="line"></span>
+                </li>
+            </ul>
+            <ul>
+                <li class="brand">
+                    <!-- <a href="#"><img src="img/logo.png" style="width: 200px;"></a> -->
+                    BUSINESS
+                </li>
+                <li class="hideOnMobile">
+                    <a href="index.html">Home</a>
+                    <span class="line"></span>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="about.html">About me</a>
+                    <span class="line"></span>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="services.html">Services</a>
+                    <span class="line"></span>
+                </li>
+                <li class="hideOnMobile">
+                    <a href="contact.html">Contact Us</a>
+                    <span class="line"></span>
+                </li>
+                <li class="menu-button offset-6" onclick=showSidebar()>
+                    <a href="#"><img src="img/menu_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Navbar -->
+        <div class="contact-text">
+            <h1 class="text-contact">Contact Us</h1>
+        </div>
+    </header>
+    <!--------------------------------- Header ------------------------------>
+
+    <div class="container-fluid">
+        <!---------------------------- Map-row ----------------------->
+        <!-- <img src="img/Component 7.png" class="border mr-auto" style=" position: absolute;"> -->
+        <div class="row mt-normal">
+            <div class="col-lg-6 mt-lg-4 p-0">
+                <section class="section--purple wow slideInRight px-4" data-wow-delay=".2s">
+                    <h1 class="c-text ml-lg-5 ml-sm-2">Want to make your business better? Contact us today!</h1>
+                </section>
+            </div>
+            <div class="col-lg-6">
+                <section class="wow fadeInDown" data-wow-delay=".2s">
+                    <div class="c-box my-lg-0 my-4 ml-lg-0 ml-2">
+                        <p class="c-text2">Our team is ready to assist you and address any queries yoy may have.we eagerly await your communication.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="row shadow-lg">
+            <div id="map"></div>
+        </div>
+        <!---------------------------- Map-row ----------------------->
+
+        <!---------------------------- Form-row ----------------------->
+        <div class="row mt-normal align-items-end justify-content-end">
+            <div class="col-lg-10 mb-4">
+                <span class="c-text3 ml-lg-4">GET IN TOUCH WITH US</span>
+            </div>
+            <div class="col-2 p-0">
+                <img src="img/Component 7.png" class="c-icon img-fluid">
+            </div>
+            <!-- Form -->
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <img src="img/Component 7.png" class="c-icon" height="180">
+                    <marquee direction="1">
+                        <h1 class="display-5 m-auto" style="color: #514b4b;">How We Can Assist You?</h1>
+                    </marquee>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <label for="name">Enter Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Please enter your full name">
+                                </section>
+                            </div>
+                            <div class="form-group col-md-6 px-3">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <label for="email" class="offset-lg-2 offset-0">Email Address</label>
+                                    <input type="email" class="form-control offset-lg-2 offset-0" id="email" placeholder="Enter your email address">
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                                </section>
+                            </div>
+                            <div class="form-group col-md-6 px-3">
+                                <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                    <label for="subject" class="offset-lg-2 offset-0">Subject</label>
+                                    <input type="text" class="form-control offset-lg-2 offset-0" id="subject" placeholder="Add subject here">
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <section class="section--purple wow slideInRight" data-wow-delay=".2s">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message" placeholder="Describe your message here"></textarea>
+                            </section>
+                        </div><br>
+                        <button class="btn btn-contact mt-4">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Form -->
+
+            <div class="line-hr mt-5">
+                <hr class="hr">
+                <p class="a-text2 m-auto">
+                    <a href="#">Book Free Consultation</a>
+                </p>
+            </div>
+            <img src="img/Design element aboutus.png" class="icon-9">
+        </div>
+        <!---------------------------- Form-row ----------------------->
+
+
+        <!--------------------------------- Footer ------------------------------>
+        <div class="row bg-footer">
+            <div class="col-lg-3 col-md-3 col-6 text-center" style="margin-top: 5rem;">
+                <span class="text-16">BUSINESS</span>
+                <p class="text-17 offset-4">
+                    <a href="#">Drive Your Business To <br> Success With Us</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6" style="margin-top: 4rem;">
+                <span class="text-19">how to find us</span>
+                <p class="text-17 w-50 my-3">
+                    <a href="#">10 Downing Street London SW1A 2AA United Kingdom</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6" style="margin-top: 4rem;">
+                <span class="text-19">company</span>
+                <p class="text-17 w-50 my-3">
+                    <p class="text-18"><a href="#">home</a></p>
+                    <p class="text-18"><a href="#">about us</a></p>
+                    <p class="text-18"><a href="#">services</a></p>
+                    <p class="text-18"><a href="#">contact us</a></p>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6" style="margin-top: 4rem;">
+                <span class="text-19">social links</span><br>
+                <a href="#">
+                    <img src="img/image 2.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/image 1.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/image 3.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!--------------------------------- Footer ------------------------------>
+    </div>
+
+</body>
+
+</html>
+<script src="vendor/WOW-master/dist/wow.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+    });
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+    };
+</script>
+<script src="index.js"></script>
+<script src="vendor/scripts/jQuery.min.js"></script>
+<script src="vendor/scripts/popper.js"></script>
+<script src="vendor/scripts/bootstrap.min.js"></script>
